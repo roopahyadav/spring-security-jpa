@@ -1,10 +1,13 @@
 package io.springsecurity.springsecurityjpa.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
+//import javax.persistence.*;
 
 @Entity
 @Table(name="User")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int Id;
